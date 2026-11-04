@@ -11,7 +11,7 @@ O projeto busca unir essas duas necessidades em uma única solução.
 **#Prévia do projeto**
 
 - Página inicial
-(images/home.png)
+images/Home.png
 - Página de login
 (images/login.png)
 - Página Paciente
