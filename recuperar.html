@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Psicommunity — plataforma de conexão e agendamento de atendimento psicológico">
+    <title>Recuperar senha | Psicommunity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body data-page="recuperar">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container"><a class="brand" href="index.html"><span
+                    class="brand-mark">✳</span>Psicommunity</a><button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav ms-auto align-items-lg-center" id="nav-user"><a class="nav-link"
+                        href="login.html">Entrar</a></div>
+            </div>
+        </div>
+    </nav>
+    <main class="auth-wrap">
+        <div class="panel auth-card">
+            <div class="eyebrow">Acesso à conta</div>
+            <h1 class="h2">Recuperar senha</h1>
+            <p class="muted">Informe o e-mail cadastrado para iniciar a redefinição.</p>
+            <div id="notice" hidden></div>
+            <form id="recover-form"><label class="form-label" for="email">E-mail cadastrado</label><input
+                    class="form-control mb-3" id="email" type="email" required><button
+                    class="btn btn-primary">Continuar</button></form>
+            <div id="reset-area" hidden class="mt-4">
+                <hr>
+                <h5>Definir nova senha</h5>
+                <form id="reset-form"><input class="form-control mb-3" id="new-password" type="password" minlength="6"
+                        required placeholder="Nova senha (mínimo 6 caracteres)"><button class="btn btn-primary">Salvar
+                        nova senha</button></form>
+            </div>
+            <p class="mt-4 mb-0"><a href="login.html">Voltar ao login</a></p>
+        </div>
+    </main>
+    <footer class="footer mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© <span id="year"></span>
+                Psicommunity</span></div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
