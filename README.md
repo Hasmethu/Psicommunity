@@ -13,11 +13,11 @@ O projeto busca unir essas duas necessidades em uma única solução.
 - Página inicial
 ![Página inicial do Psicommunity](images/Home.png)
 - Página de login
-(images/login.png)
+![Página inicial do Psicommunity](images/Login.png)
 - Página Paciente
-(images/Paciente.png)
+![Página inicial do Psicommunity](images/Paciente.png)
 - Página Profissional
-(images/Profissional.png)
+![Página inicial do Psicommunity](images/Profissional.png)
 
 **Objetivos do projeto**
 
