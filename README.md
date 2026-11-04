@@ -11,7 +11,7 @@ O projeto busca unir essas duas necessidades em uma única solução.
 **#Prévia do projeto**
 
 - Página inicial
-images/Home.png
+![Página inicial do Psicommunity](screenshots/home.png)
 - Página de login
 (images/login.png)
 - Página Paciente
