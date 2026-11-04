@@ -2,15 +2,10 @@
 const DB='psicommunity_v1';const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
 const read=()=>JSON.parse(localStorage.getItem(DB)||'null');const write=d=>localStorage.setItem(DB,JSON.stringify(d));
 const cpfDigits=s=>String(s||'').replace(/[^0-9]/g,'');
-function validCPF(value){
-  const cpf=cpfDigits(value);
-  if(cpf.length!==11 || /^([0-9])\1{10}$/.test(cpf)) return false;
-  const digit=(baseLength)=>{
-    let sum=0;
-    for(let i=0;i<baseLength;i++) sum+=Number(cpf[i])*(baseLength+1-i);
-    const remainder=sum%11;
-    return remainder<2?0:11-remainder;
-  };
+function validCPF(v) {
+    let c = cpfDigits(v);
+    return c.length === 11;
+};
   return digit(9)===Number(cpf[9]) && digit(10)===Number(cpf[10]);
 }
 function formatCPF(value){
