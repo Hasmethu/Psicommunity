@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Psicommunity — plataforma de conexão e agendamento de atendimento psicológico">
+    <title>Agendar atendimento | Psicommunity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body data-page="agendamento">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container"><a class="brand" href="index.html"><span
+                    class="brand-mark">✳</span>psicommunity</a><button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav ms-auto align-items-lg-center" id="nav-user"><a class="nav-link"
+                        href="login.html">Entrar</a></div>
+            </div>
+        </div>
+    </nav>
+    <main class="auth-wrap">
+        <div class="panel auth-card">
+            <div class="eyebrow">Novo encontro</div>
+            <h1 class="h2" id="booking-title">Agendar atendimento</h1>
+            <p class="muted">Escolha um atendente, modalidade e horário livre.</p>
+            <div id="notice" hidden></div>
+            <form id="booking-form">
+                <div class="mb-3"><label class="form-label" for="provider">Atendente</label><select class="form-select"
+                        id="provider" required></select></div>
+                <div class="mb-3"><label class="form-label" for="mode">Modalidade</label><select class="form-select"
+                        id="mode" required>
+                        <option value="">Selecione</option>
+                        <option value="online">Online</option>
+                        <option value="presencial">Presencial</option>
+                    </select></div>
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label" for="date">Data</label><input class="form-control"
+                            type="date" id="date" required></div>
+                    <div class="col-md-6"><label class="form-label" for="time">Horário disponível</label><select
+                            class="form-select" id="time" required>
+                            <option value="">Selecione atendente e data</option>
+                        </select></div>
+                </div>
+                <div class="d-flex gap-2 mt-4"><button class="btn btn-primary flex-grow-1" id="booking-submit">Revisar
+                        agendamento</button><a class="btn btn-outline-secondary" href="painel.html">Voltar</a></div>
+            </form>
+            <p class="small-note mt-3">O horário só será reservado após sua confirmação na próxima etapa.</p>
+        </div>
+    </main>
+    <footer class="footer mt-5">
+        <div class="container d-flex flex-wrap justify-content-between gap-2"><span>© <span id="year"></span>
+                Psicommunity</span></div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
