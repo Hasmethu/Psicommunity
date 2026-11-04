@@ -6,8 +6,6 @@ function validCPF(v) {
     let c = cpfDigits(v);
     return c.length === 11;
 }
-  return digit(9)===Number(cpf[9]) && digit(10)===Number(cpf[10]);
-}
 function formatCPF(value){
   const digits=cpfDigits(value).slice(0,11);
   return digits
